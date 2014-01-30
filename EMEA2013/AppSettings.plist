@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LiveIDAuthenticationToken</key>
+	<string></string>
+	<key>LiveIDLink</key>
+	<string></string>
+	<key>AccountEmail</key>
+	<string></string>
+	<key>PUID</key>
+	<integer>0</integer>
+	<key>PrimaryGroupSID</key>
+	<string></string>
+	<key>PrimarySID</key>
+	<string></string>
+	<key>UPN</key>
+	<string></string>
+	<key>Alias</key>
+	<string></string>
+	<key>SetPrivacy</key>
+	<false/>
+	<key>UseBatchUpdate</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,41 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#define _TEST_ENV
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "UIView+Custom.h"
+    #import "Analytics.h"
+    #import "ExceptionHandler.h"
+
+    #define FACEBOOK_APPID @"570700516317965"
+    #define FACEBOOK_SECRETID @"83ddf6899249b8d18f623c9096d2ca1b"
+    #define FACEBOOK_EVENTID @"176791305836137"
+    #define FACEBOOK_ACCESSTOKEN @"570700516317965|CZCnmcno5dL7x17P0MyH0AnWNWU"
+
+    #define TWITTER_HASH_NAME @"%23conv13EMEA"
+    #define TWITTER_POST_HASH_NAME @"#conv13EMEA"
+
+    #define LINKEDIN_CALL_BACKURL @"http://goconvergence.cloudapp.net/uat/pageredirected.html"
+    #define LINKED_IN_SECRETID @"vLt1nx3D6kMlUblk"
+    #define LINKED_APPKEY @"1msu00m33bnp"
+    #define LINKED_GROUP_ID @"6514221"
+
+    #define BING_MAP_KEY @"AuRwnUxR3RlIk0UOXiqcXCX9P_p2PilE_SC4k9sIhWFY0f8wiyfwnyT5GWgC0X68"
+
+    #define APP  ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+    #define ALERT(title, msg) UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:msg delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil]; [alert show];
+
+    #define NETWORK_ALERT() UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network Error" message:@"Internet connection not available" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil]; [alert show];
+#endif
